@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-// Student class
 class Student {
     private int id;
     private String name;
@@ -39,7 +38,7 @@ class Student {
     }
 }
 
-// Teacher class
+
 class Teacher {
     private int id;
     private String name;
@@ -65,7 +64,7 @@ class Teacher {
     }
 }
 
-// School class
+
 class School {
     private static int totalMoneyEarned;
     private static int totalMoneySpent;
@@ -132,19 +131,19 @@ public class SchoolManagementSystem {
         Scanner scanner = new Scanner(System.in);
         School school = new School();
 
-        // Add teachers
+     
         school.addTeacher(new Teacher(1, "Mr. Abdul", 50000));
         school.addTeacher(new Teacher(2, "Ms. Salim", 55000));
 
-        // Add students
+       
         school.addStudent(new Student(1, "Shiek", 10));
         school.addStudent(new Student(2, "Mohmmad", 12));
 
-        // Student pays fees
+        
         school.getStudents().get(0).payFees(100000);
         school.getStudents().get(1).payFees(140000);
 
-        // Teachers receive salary
+       
         school.getTeachers().get(0).receiveSalary(50000);
         school.getTeachers().get(1).receiveSalary(55000);
 
