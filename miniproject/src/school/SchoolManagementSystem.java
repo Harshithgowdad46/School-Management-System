@@ -16,7 +16,7 @@ class Student {
         this.name = name;
         this.grade = grade;
         this.feesPaid = 0;
-        this.totalFees = 150000; // Assume total fees per student
+        this.totalFees = 150000; 
     }
 
     public void payFees(int amount) {
